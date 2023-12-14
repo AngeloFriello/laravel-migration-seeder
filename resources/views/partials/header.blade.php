@@ -4,7 +4,7 @@
             <div class="col-12">
                 <ul class="d-flex gap-3">
                     <li>PAGINA PROVA</li>
-                    <li>movies</li>
+                    <li>trains</li>
                 </ul>
             </div>
         </div>
