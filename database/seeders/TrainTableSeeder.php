@@ -13,7 +13,7 @@ class TrainTableSeeder extends Seeder
      * Run the database seeds.
      */
 
-    public function run(Faker $faker)
+    public function run(Faker $faker): void
     {
         for($i = 0;$i < 100; $i++){
 

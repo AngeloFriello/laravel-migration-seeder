@@ -3,23 +3,48 @@
 @section('content')
     <section class="container">
         <div class="row">
-            @foreach ($trains as $train)
-                <div class="col-3">
-                    <ul class="card">
-                        <li>{{$train->wagons_number}}</li>
-                        <li>{{$train->company}}</li>
-                        <li>{{$train->departure_station}}</li>
-                        <li>{{$train->arrival_station}}</li>
-                        <li>{{$train->departure_time}}</li>
-                        <li>{{$train->arrival_time}}</li>
-                        <li>{{$train->train_code}}</li>
-                        <li>{{$train->on_time}}</li>
-                        <li>{{$train->cancelled}}</li>
-                    </ul>
-                </div>
-            @endforeach
-            
+                <div class="col-12">
+                    <table>
+                        <caption>
+                            <p>I treni</p>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Compagnia</th>
+                                <th>Stazione di arrivo</th>
+                                <th>Stazione di partenza</th>
+                                <th>Orario di arrivo</th>
+                                <th>Orario di partenza</th>
+                                <th>Codice treno</th>
+                                <th>Numero vagoni</th>
+                                <th>Cancellato</th>
+                                <th>In orario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
+                            @foreach ($trains as $train)
+
+                            <tr>
+                                <td>{{$train->wagons_number}}</td>
+                                <td>{{$train->company}}</td>
+                                <td>{{$train->departure_station}}</td>
+                                <td>{{$train->arrival_station}}</td>
+                                <td>{{$train->departure_time}}</td>
+                                <td>{{$train->arrival_time}}</td>
+                                <td>{{$train->train_code}}</td>
+                                <td>{{$train->on_time}}</td>
+                                <td>{{$train->cancelled}}</td>
+                            </tr>
+
+                            @endforeach
+
+                        </tbody>
+                    </table>
+                </div>
+            
+            
+            
         </div>
     </section>
 @endsection
