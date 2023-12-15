@@ -26,15 +26,15 @@
                             @foreach ($trains as $train)
 
                             <tr>
-                                <td>{{$train->wagons_number}}</td>
                                 <td>{{$train->company}}</td>
-                                <td>{{$train->departure_station}}</td>
                                 <td>{{$train->arrival_station}}</td>
-                                <td>{{$train->departure_time}}</td>
+                                <td>{{$train->departure_station}}</td>
                                 <td>{{$train->arrival_time}}</td>
+                                <td>{{$train->departure_time}}</td>
                                 <td>{{$train->train_code}}</td>
-                                <td>{{$train->on_time}}</td>
+                                <td>{{$train->wagons_number}}</td>
                                 <td>{{$train->cancelled}}</td>
+                                <td>{{$train->on_time}}</td>
                             </tr>
 
                             @endforeach
